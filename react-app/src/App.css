@@ -1,0 +1,58 @@
+
+.main-page h1{
+    font-size: 2.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.main-page .start{
+    position: relative;
+    padding: 0.8rem 1.9rem;
+    border: none;
+    border-radius: 10px;
+   /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) ,rgba(255, 255,12));*/
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: ease-in-out 0.6s;
+    width: fit-content;
+    margin-left: 50%;
+    transform: translate(-50%,0%);
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+    
+}
+ .main-page .start:hover{
+  
+    background: black;
+    color: white;
+  
+  
+    
+
+}
+.intro{
+    transition: opacity 0.5s ease;
+}
+.fade-out{
+    opacity: 0;
+    z-index: -1;
+}
+
+
+/* Define the shake animation */
+@keyframes shake {
+    0% { transform: translateY(50px) }
+    30% { transform: translateY(0px) }
+    60% { transform:  translateY(-50px) }
+    80% { transform:  translateY(50px) }
+    100% { transform:  translateY(0px) }
+  }
+  
+  /* Apply the shake animation to elements with the 'shake' class */
+  .shake {
+    animation: shake 0.5s ease-in-out;
+    animation-iteration-count: 1; /* Play the animation once */
+  }
